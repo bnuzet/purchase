@@ -81,20 +81,27 @@
     <section class="main-content">
       
       <div><textarea id="code" style="width: 100%;" rows="15">
-st=>start: [1.5, 30)万元设备的采购|past
+      st=>start: [1.5, 30)万元设备的采购|past
 e=>end: 结束:>http://www.google.com
 op1=>operation: 上竞价网|past:>http://ztb.bnuz.edu.cn
 op2=>operation: Stuff|current
 sub1=>subroutine: 固定资产申报|invalid
 cond=>condition: 设备类型|approved:>http://www.google.com
+op3=>operation: 专用设备亦可理解为竞价网上供应商较少甚至没有，则：
+直接挂足6天，以免再次申请延挂3天；线下自行找好供应商，采取自报价，
+即自行做好市场调研，拟定好真实成交商，将其报价自行登上竞价网，自
+报价可在截标前多次修改，截标后不可修改；
+ |past
 c2=>condition: Good idea|rejected
 io=>inputoutput: catch something...|request
 
 st->op1(right)->cond
-cond(yes, right)->c2
+cond(yes, right)->op3
 cond(no)->sub1(left)->op1
 c2(yes)->io->e
 c2(no)->op2->e
+      
+      
         </textarea></div>
         <div><button id="run" type="button">Run</button></div>
         <div id="canvas"></div>
