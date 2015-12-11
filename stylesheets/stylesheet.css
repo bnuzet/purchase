@@ -29,7 +29,7 @@ a {
   .btn,.mainLink + .btn,.mainLink {
     margin-left: 1rem; }
 
-.btn,.mainLink:hover {
+.btn:hover,.mainLink:hover {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   background-color: rgba(255, 255, 255, 0.2);
