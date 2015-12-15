@@ -1,0 +1,42 @@
+@charset "UTF-8";
+/* CSS Document */
+#titleBig {
+	font-family:FangSong;
+	font-size:20px;
+	margin-bottom:25px;
+}
+#mainTable{
+	text-align: center;
+	font-family:SimHei;
+	font-size:11px;
+	border-collapse:collapse;
+	font-style:normal;
+	width:750px;
+}
+
+#mainTable td,tr,th{
+	border: #000 solid 1px;
+}
+
+#mainTable th,td{
+	height:20px;
+}
+#mainTable #fourSpannedRow{
+	height:80px;
+	}
+#mainTable #ThreeSpannedRow{
+	height:59px;
+	}
+#mainTable #leftAlignedRow{
+	text-align:left;
+}
+#oneTableWrapper{
+	height:800px;
+}
+.originallyFilled{
+	background-color: #F0F0F0;
+}
+.toBeFilled{
+	background-color: #FF0;
+	color:#F00;
+}
